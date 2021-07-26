@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+	/*add full-width input fields*/
+	
+	input[type=text],
+	input[type=password],
+	input[type=Number]
+	 {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 2px solid aquamarine;
+		box-sizing: border-box;
+	}
+
+	label
+	{
+		color: blue;
+	}
+
+	h2
+	{
+		color: blue;
+		font-size: 30px;
+		margin-left: 200px;
+	}
+	button {
+		background-color:dodgerblue;
+		color: white;
+		padding: 15px 20px;
+		margin: 8px 0;
+		cursor: pointer;
+		width: 100%;
+	}
+	
+	
+	.signupbtn {
+		float: left;
+		width: 100%;
+
+	}
+	
+	
+	.container {
+		padding: 16px;
+	}
+	/*clear floats*/
+	
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	/*styles for cancel button and signup button
+	on extra small screens*/
+	
+	@media screen and (max-width: 300px) {
+		.cancelbtn,
+		.signupbtn {
+			width: 100%;
+		}
+	}
+</style>
+
+<body>
+
+	<h2>Sign-Up </h2>
+	<!--Step 1:Adding HTML-->
+	<form action="" style="border:1px solid aquamarine">
+		<div class="container">
+			<label><b>Name</b></label>
+			<input type="text" placeholder="Enter Your Name" name="Name" required>
+
+			<label><b>Email</b></label>
+			<input type="text" placeholder="Enter Email" name="email" required>
+
+			<label><b>Phone Number</b></label><br><br>
+			<input type="Number" placeholder="Phone Number" name="Phone" required>
+			
+			<label><br>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+
+			
+			<input type="checkbox" checked="checked"> Remember me
+			<p>To create an account you have to agree our <a href="#">Terms & Privacy</a>.</p>
+
+			<div class="clearfix">
+				
+				<button type="submit" class="signupbtn">Sign Up</button>
+			</div>
+		</div>
+	</form>
+
+</body>
+
+</html>
