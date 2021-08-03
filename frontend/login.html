@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Login page
+        </title>
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Style+Script&family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+        *{
+            font-family: 'Ubuntu', sans-serif;
+            margin: 10px;
+            padding: 0;
+        }
+        h1{
+            
+            font-size: 40px;
+            color: blue;
+            margin-left: 35%;
+        }
+        #box{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-top: 6%;
+            background-color: white;
+            height: 380px;
+            width: 400px;
+
+            border-radius: 5px;
+            margin-left:30% ;
+
+        }
+        input{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 5px;
+            border: none;
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 90%;
+		padding: 12px 20px;
+		margin: 20px ;
+		display: inline-block;
+		
+		box-sizing: border-box;
+        
+        }
+    a{
+        color:royalblue;
+        text-decoration: none;
+    }
+    button{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 90%;
+        padding:12px 20px ;
+        margin-left: 4.5%;
+        align-items: center;
+        color: white;
+        background-color:blue;
+        border: none;
+        border-radius: 5px;
+
+    }
+    p{
+        
+        margin-left: 90px;
+        color: orangered;
+    }
+    @media screen and (max-width: 300px) {
+		input,
+		button,.box {
+			width: 100%;
+		}
+    }
+    </style>
+
+    <body>
+    <form action="/" method="POST">
+        
+        <div id="box">
+            <h1>Login</h1>
+            <br>
+            <br>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <input type="password" placeholder="Enter ur Password" required>
+            
+            <button type="submit" class="signupbtn">submit</button>
+            <p><a href="signup.html">New User? Create an account</a></p>
+
+        </div>
+
+    </form>
+
+    </body>
+</html>
